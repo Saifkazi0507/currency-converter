@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Currency Converter</h2>
+        <form>
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input type="number" id="amount" value="1" />
+            </div>
+
+            <!-- From Currency Section -->
+            <div class="dropdown from">
+                <p>From</p>
+                <div class="custom-select" id="from-currency">
+                    <div class="selected-option">
+                        <img id="from-flag" src="https://flagsapi.com/US/flat/64.png" alt="From Flag">
+                        <span id="from-currency-text">USD</span>
+                    </div>
+                    <div class="options" id="from-options">
+                       
+                </div>
+            </div>
+
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+           
+            <div class="dropdown to">
+                <p>To</p>
+                <div class="custom-select" id="to-currency">
+                    <div class="selected-option">
+                        <img id="to-flag" src="https://flagsapi.com/IN/flat/64.png" alt="To Flag">
+                        <span id="to-currency-text">INR</span>
+                    </div>
+                    <div class="options" id="to-options">
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="msg">1 USD = 75 INR</div> 
+
+            <button type="button" id="convert-button">Convert</button>   
+        </form>
+    </div>
+
+    <script src="code.js"></script> 
+    <script src="app.js"></script> 
+</body>
+</html>
